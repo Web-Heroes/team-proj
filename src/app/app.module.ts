@@ -5,18 +5,19 @@ import { AppRoutingModule, routeComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SurveyComponent } from './survey/survey.component';
+//import { HomeComponent } from './home/home.component';
+//import { SurveyComponent } from './survey/survey.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
+    //HomeComponent,
+    //SurveyComponent
     routeComponents,
-    SurveyComponent
+    
   ],
   imports: [
     BrowserModule,
