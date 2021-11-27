@@ -1,0 +1,43 @@
+<!--
+COMP249-WebHeroes
+Manya Gupta - 301176500
+Prince Duru - 301167756
+Tatsat Tendulkar - 301166880
+Shaqayeq Salimy - 301114141
+Mark Vinarao - 301161669
+-->
+
+<div id="login-box">
+    <div class="left">
+      <h1>Sign up</h1>
+      <form class="login-form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          formControlName="username"
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="E-mail"
+          formControlName="email"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          formControlName="password"
+        />
+        <input
+          type="password"
+          name="password2"
+          placeholder="Retype password"
+          formControlName="confirmPassword"
+          />
+          <!-- <button type="submit" [disabled]="!loginForm.valid">login</button> -->
+        <input type="submit" [disabled]="!signupForm.valid"  name="signup_submit" value="Sign me up" />
+      </form>
+    </div>
+  </div>
+  
